@@ -35,39 +35,5 @@
 # After applying 'merge sort' on the input array, the output is [0 2 3 6 9].
 
 
-def merge(arr: [int], l:int, m: int, r: int):
-    i=0
-    j=0
-    k=0
-    while i<len(a1) and j<len(a2):
-        if (a1[i]<a2[j]):
-            a[k]=a1[i]
-            k=k+1
-            i=i+1
-        else:
-            a[k]=a2[j]
-            k=k+1
-            j=j+1
-    while i < len(a1):
-        a[k]=a1[i]
-        k=k+1
-        i=i+1
-    while j < len(a2):
-        a[k]=a2[j]
-        k=k+1
-        j=j+1
 
-    
-
-
-
-def mergeSort(arr: [int], l: int, r: int):
-    if l < r:
-        m = (l + r) // 2
-
-   
-    mergeSort(arr, l, m)
-    mergeSort(arr, m + 1, r)
-
-    merge(arr, l, m, r)
 
